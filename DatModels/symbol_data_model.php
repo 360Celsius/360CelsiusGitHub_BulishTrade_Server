@@ -1,0 +1,8 @@
+<?php
+    
+    $symbol;
+    $name;
+    $isEnabled;
+
+?>
+
