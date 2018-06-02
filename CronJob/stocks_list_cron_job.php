@@ -1,3 +1,3 @@
 <?php
-    $quotes=array("AAPL");//,"ACHN","AETI");
+    $quotes=array("AAPL","ACHN","AETI");
 ?>
