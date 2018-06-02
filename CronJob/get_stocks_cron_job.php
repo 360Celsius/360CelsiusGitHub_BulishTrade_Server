@@ -4,9 +4,9 @@ include 'stocks_list_cron_job.php';
 include 'connect_to_data_base.php';
 include 'quotes_data_model.php';
 
-foreach ($quotes as $key => $value) {
+for ($x = 0; $x <= count($quotes)-1 ; $x++) {
 
-    $url = 'https://api.iextrading.com/1.0/stock/'. trim($value) .'/quote';
+    $url = 'https://api.iextrading.com/1.0/stock/'. trim($quotes[$x]) .'/quote';
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -179,8 +179,8 @@ foreach ($quotes as $key => $value) {
         $ytdChange = ' ';
 
 
-    $sql = "REPLACE INTO quotes_data (symbol,companyName,primaryExchange,sector,calculationPrice,openValue,openTime,closeValue,closeTime,highValue,lowValue,latestPrice,latestSource,latestTime,latestUpdate,latestVolume,iexRealtimePrice,iexRealtimeSize,iexLastUpdated,delayedPrice,delayedPriceTime,extendedPrice,extendedChange,extendedChangePercent,extendedPriceTime,previousClose,changeValue,changePercent,iexMarketPercent,iexVolume,avgTotalVolume,iexBidSize,iexBidPrice,iexAskSize,iexAskPrice,marketCap,peRatio,week52High,week52Low,ytdChange)
-       VALUES ('$symbol','$companyName','$primaryExchange','$sector','$calculationPrice','$open','$openTime','$close','$closeTime','$high','$low','$latestPrice','$latestSource','$latestTime','$latestUpdate','$latestVolume','$iexRealtimePrice','$iexRealtimeSize','$iexLastUpdated','$delayedPrice','$delayedPriceTime','$extendedPrice','$extendedChange','$extendedChangePercent','$extendedPriceTime','$previousClose','$change','$changePercent','$iexMarketPercent','$iexVolume','$avgTotalVolume','$iexBidSize','$iexBidPrice','$iexAskSize','$iexAskPrice','$marketCap','$peRatio','$week52High','$week52Low','$ytdChange')";
+    $sql = "REPLACE INTO quotes_data (id,symbol,companyName,primaryExchange,sector,calculationPrice,openValue,openTime,closeValue,closeTime,highValue,lowValue,latestPrice,latestSource,latestTime,latestUpdate,latestVolume,iexRealtimePrice,iexRealtimeSize,iexLastUpdated,delayedPrice,delayedPriceTime,extendedPrice,extendedChange,extendedChangePercent,extendedPriceTime,previousClose,changeValue,changePercent,iexMarketPercent,iexVolume,avgTotalVolume,iexBidSize,iexBidPrice,iexAskSize,iexAskPrice,marketCap,peRatio,week52High,week52Low,ytdChange)
+       VALUES ('$x','$symbol','$companyName','$primaryExchange','$sector','$calculationPrice','$open','$openTime','$close','$closeTime','$high','$low','$latestPrice','$latestSource','$latestTime','$latestUpdate','$latestVolume','$iexRealtimePrice','$iexRealtimeSize','$iexLastUpdated','$delayedPrice','$delayedPriceTime','$extendedPrice','$extendedChange','$extendedChangePercent','$extendedPriceTime','$previousClose','$change','$changePercent','$iexMarketPercent','$iexVolume','$avgTotalVolume','$iexBidSize','$iexBidPrice','$iexAskSize','$iexAskPrice','$marketCap','$peRatio','$week52High','$week52Low','$ytdChange')";
 
     if (mysqli_query($link, $sql)) {
         $last_id = mysqli_insert_id( $link);
