@@ -1,8 +1,8 @@
 <?php
 
 include 'stocks_list_cron_job.php';
-include 'connect_to_data_base.php';
-include 'quotes_data_model.php';
+include '/storage/ssd4/893/6018893/public_html/ConnectToDataBase/connect_to_data_base.php';
+include '/storage/ssd4/893/6018893/public_html/DatModels/quotes_data_model.php';
 
 for ($x = 0; $x <= count($quotes)-1 ; $x++) {
 
