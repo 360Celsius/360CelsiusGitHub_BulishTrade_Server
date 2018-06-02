@@ -1,0 +1,45 @@
+<?php
+    
+    $symbol;
+    $companyName;
+    $primaryExchange;
+    $sector;
+    $calculationPrice;
+    $open;
+    $openTime;
+    $close;
+    $closeTime;
+    $high;
+    $low;
+    $latestPrice;
+    $latestSource;
+    $latestTime;
+    $latestUpdate;
+    $latestVolume;
+    $iexRealtimePrice;
+    $iexRealtimeSize;
+    $iexLastUpdated;
+    $delayedPrice;
+    $delayedPriceTime;
+    $extendedPrice;
+    $extendedChange;
+    $extendedChangePercent;
+    $extendedPriceTime;
+    $previousClose;
+    $change;
+    $changePercent;
+    $iexMarketPercent;
+    $iexVolume;
+    $avgTotalVolume;
+    $iexBidPrice;
+    $iexBidSize;
+    $iexAskPrice;
+    $iexAskSize;
+    $marketCap;
+    $peRatio;
+    $week52High;
+    $week52Low;
+    $ytdChange;
+    
+?>
+
