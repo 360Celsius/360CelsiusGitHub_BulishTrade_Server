@@ -4,9 +4,9 @@ include '/storage/ssd4/893/6018893/public_html/QoutesList/stocks_list_cron_job.p
 include '/storage/ssd4/893/6018893/public_html/ConnectToDataBase/connect_to_data_base.php';
 include '/storage/ssd4/893/6018893/public_html/DatModels/quotes_data_model.php';
 
-for ($x = 0; $x <= count($quotes)-1 ; $x++) {
+for ($x = 0; $x <= count($arrayFiltered)-1 ; $x++) {
 
-    $url = 'https://api.iextrading.com/1.0/stock/'. trim($quotes[$x]) .'/quote';
+    $url = 'https://api.iextrading.com/1.0/stock/'. trim($arrayFiltered[$x]) .'/quote';
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);

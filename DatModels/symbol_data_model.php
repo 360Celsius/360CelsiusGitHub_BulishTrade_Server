@@ -1,8 +1,10 @@
 <?php
     
-    $symbol;
-    $name;
-    $isEnabled;
+    class Symbol {
+       public $symbol;
+       public $name;
+       public $isEnabled;
+    }
 
 ?>
 
