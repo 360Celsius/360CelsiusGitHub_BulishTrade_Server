@@ -4,14 +4,19 @@
 
 
 
-    $sql = "SELECT * FROM quotes_data";
+    $sql = "SELECT * FROM quotes_data ORDER BY latestVolume DESC";
     $result = $link->query($sql);
-
+    
     $quotes = [] ;
+    $stopLoop = 0;
    
      if ($result->num_rows > 0) {
          // output data of each row
          while($row = $result->fetch_assoc()) {
+             $stopLoop++;
+             if($stopLoop == 16){
+                 break;
+             }
              
              $quote = new Quote();
              

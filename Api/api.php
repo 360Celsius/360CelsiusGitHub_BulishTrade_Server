@@ -1,7 +1,7 @@
 <?php
     
     header("Content-Type:application/json");
-    include 'get_most_active.php';
+    
     
     $quotesToJson = [] ;
     
@@ -10,6 +10,7 @@
         
         if(!strcmp($requestType,"getMostActive"))
         {
+            include_once 'get_most_active.php';
             responseMostActiveStocks(200,"Api Found",$quotes);
 
         }else if(!strcmp($requestType,"getTops")){
