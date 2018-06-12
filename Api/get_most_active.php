@@ -7,16 +7,13 @@
     $sql = "SELECT * FROM quotes_data ORDER BY latestVolume DESC";
     $result = $link->query($sql);
     
-    $quotes = [] ;
+    $quotesMostActive = [] ;
     $stopLoop = 0;
    
      if ($result->num_rows > 0) {
          // output data of each row
          while($row = $result->fetch_assoc()) {
-             $stopLoop++;
-             if($stopLoop == 16){
-                 break;
-             }
+
              
              $quote = new Quote();
              
@@ -61,7 +58,18 @@
              $quote->week52Low =  $row["week52Low"];
              $quote->ytdChange =  $row["ytdChange"];
              
-             $quotes[] = $quote;
+             
+             
+             if($stopLoop == 16){
+                 break;
+             }
+            
+             if($row["latestVolume"] != ''){
+                $quotesMostActive[] = $quote;
+                $stopLoop++;
+             }else if($stopLoop > 0){
+                 $stopLoop--;
+             }
              
             
          }
