@@ -1,7 +1,7 @@
 <?php
     
     header("Content-Type:application/json");
-    
+    error_reporting(0);
     
     $quotesToJson = [] ;
     
