@@ -4,9 +4,9 @@ include '/storage/ssd4/893/6018893/public_html/QoutesList/stocks_list_cron_job.p
 include '/storage/ssd4/893/6018893/public_html/ConnectToDataBase/connect_to_data_base.php';
 include '/storage/ssd4/893/6018893/public_html/DatModels/quotes_data_model.php';
 
-for ($x = 0; $x <= count($arrayFiltered)-1 ; $x++) {
-    echo "$arrayFiltered";
-    $url = 'https://api.iextrading.com/1.0/stock/'. trim($arrayFiltered[$x]) .'/quote';
+for ($x = 0; $x <= count($arrayFiltered_12)-1 ; $x++) {
+ echo "$arrayFiltered_5";
+    $url = 'https://api.iextrading.com/1.0/stock/'. trim($arrayFiltered_12[$x]) .'/quote';
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -179,7 +179,7 @@ for ($x = 0; $x <= count($arrayFiltered)-1 ; $x++) {
         $ytdChange = ' ';
 
 
-    $sql = "REPLACE INTO quotes_data (id,symbol,companyName,primaryExchange,sector,calculationPrice,openValue,openTime,closeValue,closeTime,highValue,lowValue,latestPrice,latestSource,latestTime,latestUpdate,latestVolume,iexRealtimePrice,iexRealtimeSize,iexLastUpdated,delayedPrice,delayedPriceTime,extendedPrice,extendedChange,extendedChangePercent,extendedPriceTime,previousClose,changeValue,changePercent,iexMarketPercent,iexVolume,avgTotalVolume,iexBidSize,iexBidPrice,iexAskSize,iexAskPrice,marketCap,peRatio,week52High,week52Low,ytdChange)
+    $sql = "REPLACE INTO quotes_data_12 (id,symbol,companyName,primaryExchange,sector,calculationPrice,openValue,openTime,closeValue,closeTime,highValue,lowValue,latestPrice,latestSource,latestTime,latestUpdate,latestVolume,iexRealtimePrice,iexRealtimeSize,iexLastUpdated,delayedPrice,delayedPriceTime,extendedPrice,extendedChange,extendedChangePercent,extendedPriceTime,previousClose,changeValue,changePercent,iexMarketPercent,iexVolume,avgTotalVolume,iexBidSize,iexBidPrice,iexAskSize,iexAskPrice,marketCap,peRatio,week52High,week52Low,ytdChange)
        VALUES ('$x','$symbol','$companyName','$primaryExchange','$sector','$calculationPrice','$open','$openTime','$close','$closeTime','$high','$low','$latestPrice','$latestSource','$latestTime','$latestUpdate','$latestVolume','$iexRealtimePrice','$iexRealtimeSize','$iexLastUpdated','$delayedPrice','$delayedPriceTime','$extendedPrice','$extendedChange','$extendedChangePercent','$extendedPriceTime','$previousClose','$change','$changePercent','$iexMarketPercent','$iexVolume','$avgTotalVolume','$iexBidSize','$iexBidPrice','$iexAskSize','$iexAskPrice','$marketCap','$peRatio','$week52High','$week52Low','$ytdChange')";
 
     if (mysqli_query($link, $sql)) {
@@ -192,6 +192,9 @@ for ($x = 0; $x <= count($arrayFiltered)-1 ; $x++) {
 
 
 }
+
+
+
 
 mysqli_close($link);
 

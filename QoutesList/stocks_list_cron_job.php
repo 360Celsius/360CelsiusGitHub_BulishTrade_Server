@@ -3,7 +3,26 @@
 //   $quotes=array("AAPL","ACHN","AETI");
     
      $arrayFiltered = array();
-    
+     $arrayFiltered_2 = array();
+     $arrayFiltered_3 = array();
+     $arrayFiltered_4 = array();
+     $arrayFiltered_5 = array();
+     $arrayFiltered_6 = array();
+	 $arrayFiltered_7 = array();
+     $arrayFiltered_8 = array();
+	 $arrayFiltered_9 = array();
+     $arrayFiltered_10 = array();
+	 
+	 $arrayFiltered_11 = array();
+     $arrayFiltered_12 = array();
+     $arrayFiltered_13 = array();
+     $arrayFiltered_14 = array();
+     $arrayFiltered_15 = array();
+     $arrayFiltered_16 = array();
+	 $arrayFiltered_17 = array();
+     $arrayFiltered_18 = array();
+	 $arrayFiltered_19 = array();
+	
      $quotes=array( "A",
                     "AA",
                     "AAL",
@@ -1000,11 +1019,144 @@
 
 
 
-    for ($x = 0; $x <= count($quotes)-1 ; $x++){
-        if($x % 5 == 0){
+    for ($x = 0; $x <= 50 ; $x++){
+        //if($x % 5 == 0)
+        {
         	array_push($arrayFiltered, $quotes[$x]);
         }
     }
+    
+    for ($x = 51; $x <= 100 ; $x++){
+        //if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_2, $quotes[$x]);
+        }
+    }
+    
+    for ($x = 101; $x <= 151 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_3, $quotes[$x]);
+        }
+    }
+    
+    for ($x = 152; $x <= 200 ; $x++){
+        //if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_4, $quotes[$x]);
+        }
+    }
+    
+    for ($x = 201; $x <= 251 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_5, $quotes[$x]);
+        }
+    }
+	
+	
+	for ($x = 252; $x <= 300 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_6, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 301; $x <= 351 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_7, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 352; $x <= 400 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_8, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 401; $x <= 451 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_9, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 452; $x <= 500 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_10, $quotes[$x]);
+        }
+    }
+	
+	
+	for ($x = 501; $x <= 551 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_11, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 552; $x <= 600 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_12, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 601; $x <= 651 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_13, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 652; $x <= 700 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_14, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 701; $x <= 752 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_15, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 800; $x <= 851 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_16, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 852; $x <= 900 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_17, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 901; $x <= 951 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_18, $quotes[$x]);
+        }
+    }
+	
+	for ($x = 952; $x <= count($quotes)-1 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_19, $quotes[$x]);
+        }
+    }
+	
+
+    
+  
 
 ?>
 
