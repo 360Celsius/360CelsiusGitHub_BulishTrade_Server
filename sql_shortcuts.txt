@@ -1,0 +1,85 @@
+DELETE FROM `quotes_data`;
+DELETE FROM `quotes_data_2`;
+DELETE FROM `quotes_data_3`;
+DELETE FROM `quotes_data_4`;
+DELETE FROM `quotes_data_5`;
+DELETE FROM `quotes_data_6`;
+DELETE FROM `quotes_data_7`;
+DELETE FROM `quotes_data_8`;
+DELETE FROM `quotes_data_9`;
+DELETE FROM `quotes_data_10`;
+DELETE FROM `quotes_data_11`;
+DELETE FROM `quotes_data_12`;
+DELETE FROM `quotes_data_13`;
+DELETE FROM `quotes_data_14`;
+DELETE FROM `quotes_data_15`;
+DELETE FROM `quotes_data_16`;
+DELETE FROM `quotes_data_17`;
+DELETE FROM `quotes_data_18`;
+DELETE FROM `quotes_data_19`;
+
+
+
+DROP TABLE `quotes_data_6`;
+DROP TABLE `quotes_data_7`;
+DROP TABLE `quotes_data_8`;
+DROP TABLE `quotes_data_9`;
+DROP TABLE `quotes_data_10`;
+DROP TABLE `quotes_data_11`;
+DROP TABLE `quotes_data_12`;
+DROP TABLE `quotes_data_13`;
+DROP TABLE `quotes_data_14`;
+DROP TABLE `quotes_data_15`;
+DROP TABLE `quotes_data_16`;
+DROP TABLE `quotes_data_17`;
+DROP TABLE `quotes_data_18`;
+DROP TABLE `quotes_data_19`;
+
+
+CREATE TABLE `quotes_data_6` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_7` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_8` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_9` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_10` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_11` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_12` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_13` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_14` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_15` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_16` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_17` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_18` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_19` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_20` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_21` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_22` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_23` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_24` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_25` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_26` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_27` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_28` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_29` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_30` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_31` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_32` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_33` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_34` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_35` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_36` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_37` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_38` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_39` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_40` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_41` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_42` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_43` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_44` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_45` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_46` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_47` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_48` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_49` LIKE `quotes_data`;
+CREATE TABLE `quotes_data_50` LIKE `quotes_data`;
+
+
