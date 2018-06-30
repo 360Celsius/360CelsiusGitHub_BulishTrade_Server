@@ -1224,19 +1224,14 @@
         }
     }
 	
-	for ($x = 481; $x <= 500 ; $x++){
+	/////////////// Split table 25 in to 25 and table 48///////
+	for ($x = 501; $x <= 511 ; $x++){
        // if($x % 5 == 0)
         {
         	array_push($arrayFiltered_25, $quotes[$x]);
         }
     }
-	
-	for ($x = 501; $x <= 521 ; $x++){
-       // if($x % 5 == 0)
-        {
-        	array_push($arrayFiltered_25, $quotes[$x]);
-        }
-    }
+	/////////////////////////////////////////////////////////
 	
 	for ($x = 541; $x <= 560 ; $x++){
        // if($x % 5 == 0)
@@ -1391,6 +1386,16 @@
         	array_push($arrayFiltered_47, $quotes[$x]);
         }
     }
+    
+    /////////////// Split table 25 in to 25 and table 48///////
+
+	for ($x = 512; $x <= 521 ; $x++){
+       // if($x % 5 == 0)
+        {
+        	array_push($arrayFiltered_48, $quotes[$x]);
+        }
+    }
+	/////////////////////////////////////////////////////////
 
 ?>
 
